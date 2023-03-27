@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div id="body" style="width: 27%;" class="m-auto">
+			<h1 style="text-align: center;">你是不是一只傻狗？？？</h1>
+			<button class="btn btn-primary" style="float: left;" onclick="Yes()">是</button>
+			<button id="btn" class="btn btn-primary" style="float: right;">不是</button>
+		</div>
+		<script>
+			AInum = () => Math.floor(Math.random() * 40 + 1)
+			var b = document.getElementById("btn")
+			b.onmouseover = () => b.style.margin = AInum() + "%" + AInum() + "%" + AInum() + "%" + AInum() + "%"
+			Yes=()=>{
+				document.getElementById("body").style.width="40%"
+				document.getElementById("body").innerHTML='<img src="img/1.png" style="width: 100%;"/>'
+			}
+		</script>
+	</body>
+</html>
